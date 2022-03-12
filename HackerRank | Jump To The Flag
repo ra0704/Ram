@@ -1,0 +1,151 @@
+Find the minimum number of times Bob must jump up the wall to get the flag.
+
+A climber is trying to reach a flag that is some height above the ground. In the attempt to reach the flag, the climber can make any number of jumps up the rock wall where the flag is mounted. Movements can only be made up the wall, and the climber must end at exactly the height of the flag.
+
+&nbsp;
+
+There are 2 types of jumps:
+
+
+	A jump of height 1.
+	A jump of height bigJump.
+
+
+&nbsp;
+
+Determine the minimum number of jumps it will take the climber to reach the flag's exact height.
+
+&nbsp;
+
+Example
+
+flagHeight = 8
+
+bigJump = 3
+
+&nbsp;
+
+The climber starts at height 0, takes two jumps of height bigJump and two of height 1 to reach exactly 8 units in 4 jumps.
+
+&nbsp;
+
+Function Description
+
+Complete the function jumps in the editor below.
+
+&nbsp;
+
+jumps has the following parameter(s):
+
+&nbsp;&nbsp;&nbsp;&nbsp;int flagHeight:&nbsp; an integer, the flag height
+
+&nbsp;&nbsp; int  bigJump:&nbsp; an integer, the height of the second type of jump
+
+&nbsp;
+
+Returns:
+
+&nbsp;&nbsp;&nbsp;&nbsp;int: an integer, the minimum number of jumps necessary
+
+&nbsp;
+
+Constraints
+
+
+	1 ≤ bigJump, flagHeight ≤ 109
+
+
+&nbsp;
+ DO NOT REMOVE THIS LINE-->
+
+Input Format for Custom Testing
+
+
+Input from stdin will be processed as follows and passed to the function.
+
+&nbsp;
+
+The first line contains an integer flagHeight.
+
+The second line contains an integer bigJump.
+
+
+
+Sample Case 0
+
+
+Sample Input
+
+STDIN     Function
+-----     -----
+3      →  flagHeight = 3
+1      →  bigJump = 1
+
+&nbsp;
+
+Sample Output
+
+3
+
+&nbsp;
+
+Explanation
+
+The climber can only jump 1 unit or bigJump units. With bigJump = 1, the climber can only make 1-unit jumps. It will take 3 jumps to reach the flag.
+
+&nbsp;
+
+
+
+Sample Case 1
+
+
+Sample Input
+
+STDIN     Function
+-----     -----
+3      →  flagHeight = 3
+2      →  bigJump = 2
+
+&nbsp;
+
+Sample Output
+
+2
+
+&nbsp;
+
+Explanation
+
+The climber will jump bigJump = 2 units and then 1 unit to reach the flag with 2 jumps.
+
+&nbsp;
+
+
+
+Sample Case 2
+
+
+Sample Input
+
+STDIN     Function
+-----     -----
+3      →  flagHeight = 3
+3      →  bigJump = 3
+
+&nbsp;
+
+Sample Output
+
+1
+
+&nbsp;
+
+Explanation
+
+The climber will make 1 jump bigJump = 3 units up the wall to reach the flag.
+
+&nbsp;
+
+
+
